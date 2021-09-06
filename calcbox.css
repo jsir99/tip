@@ -1,0 +1,47 @@
+#calc{
+    color: white;
+    position: relative;
+    padding: 1.5rem 2.5rem;
+
+}
+#reset {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+#reset button{
+    border: none;
+    border-radius: 0.5rem;
+    font-family: 'Dosis', sans-serif;    
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    padding: 1rem clamp(1rem, 10vw, 225px);
+
+    cursor: pointer;
+    color: var(--darkgreen);
+    background-color: var(--lightgreen);
+}
+#reset button:hover{
+    background-color: var(--HLgreen);
+}
+
+#tip-amount, #total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text h6{
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+.text p{
+    margin-top: 0;
+    color: rgba(255, 255, 255, 0.5);
+}
+.amount{
+    font-size: 3rem;
+    color: var(--lightgreen);
+}

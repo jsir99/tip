@@ -1,0 +1,33 @@
+@media only screen and (max-width: 768px) {
+
+    body{
+        padding-top: 20%;
+    }
+    .container{
+        height: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "bill"
+        "select"
+        "number-people"
+        "calc";
+    }
+    #logo{
+        position: absolute;
+        top: -10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #selecttipform {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 33% 33% 33%;
+        grid-gap: .25rem;
+    }
+    #selecttipform label {
+    }
+    #number-people{
+        margin-bottom: 0;
+        margin-top: 1rem;
+    }
+}
