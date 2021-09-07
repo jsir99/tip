@@ -25,7 +25,8 @@
       <h3>Bill</h3>
       <form action="" class="input-bar" id="billform">
         <img src="images/icon-dollar.svg" id="dollar-sign" alt="">
-        <input type="text" placeholder="0">
+        <input type="text"  placeholder="0"
+        onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)))">
       </form>
     </div>
     <div class="subcont" id="select">
@@ -50,8 +51,9 @@
     <div class="subcont" id="number-people">
       <h3>Number of People</h3>
       <form action="" class="input-bar" id="numberpeopleform">
+        <span class="">Can't be zero</span>
         <img src="images/icon-person.svg" id="dollar-sign" alt="">
-        <input type="text" placeholder="1" value="1">
+        <input type="text" placeholder="1" value="1" onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)))">
       </form>
     </div>
 

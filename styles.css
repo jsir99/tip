@@ -46,6 +46,7 @@ body{
 }
 #number-people {
     grid-area: number-people;
+    position: relative;
 }
 #calc {
     border-radius: 2rem;
@@ -174,4 +175,23 @@ body{
 #selecttipform input:checked + label {
     background-color: var(--HLgreen);
     color: var(--darkgreen);
+}
+
+.error{
+    box-shadow: 0 0 5px red;
+}
+
+div>form>span{
+    visibility: hidden;
+    position: absolute;
+    top: -70%;
+    right: 0;
+}
+
+.error-msg{
+    position: absolute;
+    top: -70%;
+    right: 0;
+    color: red;
+    visibility: visible;
 }
